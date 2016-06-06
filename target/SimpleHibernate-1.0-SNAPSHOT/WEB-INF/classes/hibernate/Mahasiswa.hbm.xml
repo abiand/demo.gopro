@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 2, 2016 11:04:36 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.adam.simplehibernate.Mahasiswa" table="mahasiswa" catalog="uts" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="npm" type="string">
+            <column name="npm" />
+        </property>
+        <property name="nama" type="string">
+            <column name="nama" />
+        </property>
+        <property name="tempatLahir" type="string">
+            <column name="tempat_lahir" />
+        </property>
+        <property name="tanggalLahir" type="string">
+            <column name="tanggal_lahir" />
+        </property>
+        <property name="jenisKelamin" type="string">
+            <column name="jenis_kelamin" />
+        </property>
+        <property name="alamat" type="string">
+            <column name="alamat" />
+        </property>
+    </class>
+</hibernate-mapping>
